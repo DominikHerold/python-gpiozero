@@ -1050,7 +1050,7 @@ class PiBoardInfo(namedtuple('PiBoardInfo', (
                     dsi,
                     headers,
                     board,
-                    ) = PI_REVISIONS[revision]
+                    ) = PI_REVISIONS['100000e']
             except KeyError:
                 raise PinUnknownPi('unknown old-style revision "%x"' % revision)
         headers = {
