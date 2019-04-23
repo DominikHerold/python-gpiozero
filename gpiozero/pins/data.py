@@ -1050,7 +1050,7 @@ class PiBoardInfo(namedtuple('PiBoardInfo', (
                     dsi,
                     headers,
                     board,
-                    ) = PI_REVISIONS['100000e']
+                    ) = ('B',    '2.0', '2012Q4', 'BCM2835', 'Sony',      512,  'SD',      2,  1,  False, False, 1,  1,  {'P1': REV2_P1, 'P5': REV2_P5}, REV2_BOARD,   )
             except KeyError:
                 raise PinUnknownPi('unknown old-style revision "%x"' % revision)
         headers = {
